@@ -1,6 +1,6 @@
 {
   "name": "netrunner-trace",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A live node map of every host your agent reaches: packets fly from your machine to github.com, npm, PyPI, MCP servers and unknown hosts, with a log and first-contact alerts",
   "types": "./types/index.d.ts",
   "userConfig": {
