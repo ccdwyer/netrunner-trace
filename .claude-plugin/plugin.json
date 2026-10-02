@@ -1,0 +1,30 @@
+{
+  "name": "netrunner-trace",
+  "version": "0.1.0",
+  "description": "A live node map of every host your agent reaches: packets fly from your machine to github.com, npm, PyPI, MCP servers and unknown hosts, with a log and first-contact alerts",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "allowedHosts": {
+      "type": "string",
+      "title": "Expected hosts",
+      "description": "Comma- or space-separated hosts you expect the agent to reach. Subdomains count. Anything else is drawn red. Added to the built-in list (GitHub, npm, PyPI, crates.io, Go proxy, RubyGems, Homebrew, Docker Hub, CocoaPods, Anthropic).",
+      "default": ""
+    },
+    "showTicker": {
+      "type": "boolean",
+      "title": "Ticker above the prompt",
+      "description": "Show the last few hosts in a one-line ticker above the prompt.",
+      "default": true
+    }
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ccdwyer/netrunner-trace",
+  "supportUrl": "https://github.com/ccdwyer/netrunner-trace/issues",
+  "documentationUrl": "https://github.com/ccdwyer/netrunner-trace#readme",
+  "privacyPolicyUrl": "https://github.com/ccdwyer/netrunner-trace/blob/main/PRIVACY.md",
+  "author": {
+    "name": "Chris Dwyer",
+    "url": "https://github.com/ccdwyer"
+  },
+  "repository": "https://github.com/ccdwyer/netrunner-trace"
+}
