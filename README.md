@@ -1,5 +1,9 @@
 # Netrunner Trace
 
+![Netrunner Trace demo](media/demo.gif)
+
+[Watch the MP4](https://github.com/ccdwyer/claude-mods/raw/main/media/netrunner-trace.mp4) · [Screenshot](media/03-trace-after.png) · [Screenshot](media/01-trace-open.png)
+
 A live node map of the hosts your agent's tool calls reach. Your machine sits in the centre of a radar; every remote host a call is aimed at (github.com, registry.npmjs.org, pypi.org, MCP servers, anything else) is a node on the ring. When a call goes out, a packet flies along the edge in braille sub-pixels at 30 fps and comes back green or red. A sweep turns, first-contact hosts pulse amber, and hosts you didn't expect are drawn red.
 
 It is also a useful security view: a running log of what each tool call was aimed at, from which tool, to which host, and whether it worked. Observation only; it never blocks or changes a call.

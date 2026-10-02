@@ -359,7 +359,8 @@ export const register: Register = (on, options) => {
     const total = await read($, calls)
     const list = await allowList($)
     if (verb === 'hosts') return { text: summary(all, total, list) }
-    const opened = await $.ui.open({ id: PANE, title: 'Netrunner Trace' })
+    // 46 = header + unexpected banner + 32-row map + log rule + 10 log lines + clear button
+    const opened = await $.ui.open({ id: PANE, title: 'Netrunner Trace', rows: 46 })
     startAnimation($)
     return { text: opened.isPlaced === false ? `${summary(all, total, list)}\n(Widen the terminal to see the map.)` : 'Netrunner Trace: map open.' }
   })
